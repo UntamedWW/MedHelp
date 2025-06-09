@@ -1,0 +1,57 @@
+version: "3"
+
+services:
+  med-postgresql:
+    container_name: med-postgresql
+    image: postgres
+    restart: unless-stopped
+    networks:
+      - med
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=StrongPassword123
+      - POSTGRES_DB=medhelp
+    ports:
+      - 5432:5432
+    volumes:
+      - db:/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4
+    restart: unless-stopped
+    networks:
+      - med
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@domain.com
+      PGADMIN_DEFAULT_PASSWORD: password
+    ports:
+      - "5050:80"
+    depends_on: ["med-postgresql"]
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+  
+  medhelp-api:
+    container_name: medhelp-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    networks:
+      - med
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=med-postgresql;Database=medhelp;Username=admin;Password=StrongPassword123
+    ports:
+      - "8080:8080"
+    depends_on:
+      - med-postgresql
+
+networks:
+  med:
+    name: med
+
+volumes:
+  db:
+    driver: local
+  pgadmin-data:
