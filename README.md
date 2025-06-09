@@ -45,12 +45,25 @@ docker compose up --build -d
 | `pgadmin4`       | **5050**  | pgAdmin web console              |
 
 *Swagger UI:* [http://localhost:8080/swagger](http://localhost:8080/swagger)
-![image](https://github.com/user-attachments/assets/c53ce8bf-fe98-4522-b0ed-690176f08f6c)
+<a href="https://flutter.dev/">
+  <h1 align="center">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/c53ce8bf-fe98-4522-b0ed-690176f08f6c">
+      <img alt="Flutter" src="https://github.com/user-attachments/assets/c53ce8bf-fe98-4522-b0ed-690176f08f6c">
+    </picture>
+  </h1>
+</a>
 
 *pgAdmin:* [http://localhost:5050](http://localhost:5050)  →  login `admin@domain.com` / `password`
 Add a new server: **Host** `med-postgresql`, **User** `admin`, **Password** `StrongPassword123`, **DB** `medhelp`.
-![image](https://github.com/user-attachments/assets/9151f83c-0008-4868-b683-9b799c59b298)
-
+<a href="https://flutter.dev/">
+  <h1 align="center">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/9151f83c-0008-4868-b683-9b799c59b298">
+      <img alt="Flutter" src="https://github.com/user-attachments/assets/9151f83c-0008-4868-b683-9b799c59b298">
+    </picture>
+  </h1>
+</a>
 
 ---
 
