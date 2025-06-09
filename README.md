@@ -1,70 +1,81 @@
-# Medhelp
+MedHelp – OTC Medicine Data Management API
+MedHelp is a backend-only web application that automates the collection, normalisation, storage and delivery of data on over-the-counter medicines, active substances, medical specialties and related classifications.
+Originally developed as an engineering-degree project, the system leverages PostgreSQL for persistence and pgAdmin for graphical database administration.
 
-Medhelp to aplikacja webowa typu API służąca do zarządzania informacjami o lekach, substancjach czynnych, specjalizacjach medycznych i innych powiązanych danych. Projekt wykorzystuje bazę danych PostgreSQL oraz umożliwia podgląd i zarządzanie bazą przez pgAdmin.
+### Architecture
 
-## Infrastruktura i architektura
+The solution follows Onion Architecture, reinforced by SOLID principles and Clean-Code conventions. Each layer has a single, well-defined responsibility:
 
-Projekt został zbudowany w oparciu o wzorzec **Onion Architecture**, z zachowaniem zasad **SOLID** oraz podejścia **Clean Code**. Struktura rozwiązania opiera się na kilku warstwach, z których każda ma jasno określoną odpowiedzialność:
+Project / Layer	Purpose
+Medhelp.Domain	Core domain entities and business rules
+Medhelp.Contracts	DTOs and service interfaces
+Medhelp.Exceptions	Domain- and app-specific exceptions
+Medhelp.Repositories	Repository abstractions
+Medhelp.PersistenceLayer	EF Core configuration, migrations and PostgreSQL adapters
+Medhelp.Services.Abstractions	Service contracts
+Medhelp.Services	Business-logic and scraping implementations
+Medhelp (API)	ASP.NET Core project exposing HTTP/JSON endpoints
 
-- **Medhelp.Domain** – warstwa domenowa, zawiera encje i logikę biznesową.
-- **Medhelp.Contracts** – kontrakty, DTO oraz interfejsy wykorzystywane do komunikacji między warstwami.
-- **Medhelp.Exceptions** – definiuje wyjątki specyficzne dla domeny i aplikacji.
-- **Medhelp.Repositories** – interfejsy dostępu do danych.
-- **Medhelp.PersistenceLayer** – konfiguracja Entity Framework, migracje oraz implementacja dostępu do bazy danych PostgreSQL.
-- **Medhelp.Services.Abstractions** – interfejsy usług biznesowych.
-- **Medhelp.Services** – implementacje logiki biznesowej oraz serwisów aplikacyjnych.
-- **Medhelp** – projekt główny (API), udostępniający endpointy HTTP.
+This structure keeps business logic isolated from infrastructure, simplifies unit testing and makes future extensions or technology swaps straightforward.
 
-Dzięki takiej strukturze kod jest łatwy w utrzymaniu, testowaniu i rozbudowie.
+### Requirements
 
-## Wymagania
+Docker + Docker Compose (recommended)
 
-- Docker i Docker Compose
-- .NET 8 SDK (jeśli chcesz uruchomić lokalnie bez Dockera)
+Alternatively: .NET 8 SDK, PostgreSQL 16, pgAdmin 6
 
-## Jak uruchomić projekt
+### Quick Start (Docker)
 
-1. **Sklonuj repozytorium i przejdź do katalogu projektu:**
+bash
+Copy
+Edit
+# inside the unpacked MedHelp folder
+docker compose up --build -d
+Service	Host Port	Description
+medhelp-api	8080	ASP.NET Core 8 with Swagger docs
+med-postgresql	5432	PostgreSQL database
+pgadmin4	5050	pgAdmin web console
 
-   ```
-   git clone <adres_repozytorium>
-   cd Medhelp
-   ```
+Swagger UI: http://localhost:8080/swagger
+pgAdmin: http://localhost:5050 → login admin@domain.com / password
+Add a new server: Host med-postgresql, User admin, Password StrongPassword123, DB medhelp.
 
-2. **Uruchom wszystkie usługi za pomocą Docker Compose:**
+### Running Locally (without Docker)
 
-   ```
-   docker-compose up --build
-   ```
+Install .NET 8 SDK and PostgreSQL 16.
 
-   Spowoduje to uruchomienie:
+Create database medhelp and user admin / StrongPassword123.
 
-   - API (`medhelp-api`) na porcie `8080`
-   - Bazy danych PostgreSQL na porcie `5432`
-   - pgAdmin na porcie `5050`
+Run migrations:
 
-3. **Dostęp do API:**
+bash
+Copy
+Edit
+dotnet ef database update --project Medhelp --startup-project Medhelp
+Build and launch:
 
-   - Swagger UI: [http://localhost:8080/swagger](http://localhost:8080/swagger)
+bash
+Copy
+Edit
+dotnet run --project Medhelp
+Swagger is served at http://localhost:8080/swagger.
 
-4. **Dostęp do bazy danych przez pgAdmin:**
-   - Wejdź na [http://localhost:5050](http://localhost:5050)
-   - Zaloguj się:
-     - Email: `admin@domain.com`
-     - Hasło: `password`
-   - Dodaj nowy serwer:
-     - Host: `med-postgresql`
-     - Użytkownik: `admin`
-     - Hasło: `StrongPassword123`
-     - Baza: `medhelp`
+### Technologies
 
-## Technologie
+ASP.NET Core 8 – REST API and dependency-injection host
 
-- **ASP.NET Core** – backend API
-- **PostgreSQL** – baza danych
-- **pgAdmin** – narzędzie do zarządzania bazą danych
+Entity Framework Core – ORM and migrations
 
-## Uwagi
+PostgreSQL 16 – relational data store
 
-- Przy pierwszym uruchomieniu baza danych zostanie automatycznie zainicjalizowana i zaktualizowana do najnowszej wersji migracji.
-- Wszystkie ustawienia środowiskowe znajdują się w pliku `docker-compose.yml`.
+pgAdmin 6 – database administration GUI
+
+Docker / Docker Compose – repeatable multi-container environment
+
+### Notes
+
+On first start-up the database is seeded and updated to the latest EF Core migration automatically.
+
+Environment variables (passwords, ports) are centralised in docker-compose.yml; adjust as needed for staging or production.
+
+The codebase served as the author’s engineering thesis and is prepared for future research work, e.g. NLP-based symptom analysis, price-tracking modules or FHIR integration.
