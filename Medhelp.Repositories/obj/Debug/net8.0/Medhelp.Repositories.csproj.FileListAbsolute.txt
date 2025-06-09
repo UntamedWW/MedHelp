@@ -1,0 +1,16 @@
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Repositories\bin\Debug\net8.0\Medhelp.Repositories.deps.json
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Repositories\bin\Debug\net8.0\Medhelp.Repositories.dll
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Repositories\bin\Debug\net8.0\Medhelp.Repositories.pdb
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Repositories\bin\Debug\net8.0\Medhelp.Domain.dll
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Repositories\bin\Debug\net8.0\Medhelp.Domain.pdb
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Repositories\obj\Debug\net8.0\Medhelp.Repositories.csproj.AssemblyReference.cache
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Repositories\obj\Debug\net8.0\Medhelp.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Repositories\obj\Debug\net8.0\Medhelp.Repositories.AssemblyInfoInputs.cache
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Repositories\obj\Debug\net8.0\Medhelp.Repositories.AssemblyInfo.cs
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Repositories\obj\Debug\net8.0\Medhelp.Repositories.csproj.CoreCompileInputs.cache
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Repositories\obj\Debug\net8.0\Medhelp.Repositories.sourcelink.json
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Repositories\obj\Debug\net8.0\Medhelp..81649126.Up2Date
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Repositories\obj\Debug\net8.0\Medhelp.Repositories.dll
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Repositories\obj\Debug\net8.0\refint\Medhelp.Repositories.dll
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Repositories\obj\Debug\net8.0\Medhelp.Repositories.pdb
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Repositories\obj\Debug\net8.0\ref\Medhelp.Repositories.dll

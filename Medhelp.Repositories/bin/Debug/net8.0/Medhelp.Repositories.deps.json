@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Medhelp.Repositories/1.0.0": {
+        "dependencies": {
+          "Medhelp.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Medhelp.Repositories.dll": {}
+        }
+      },
+      "Medhelp.Domain/1.0.0": {
+        "runtime": {
+          "Medhelp.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Medhelp.Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Medhelp.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
