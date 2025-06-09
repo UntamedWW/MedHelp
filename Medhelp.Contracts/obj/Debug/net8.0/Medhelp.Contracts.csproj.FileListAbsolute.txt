@@ -1,0 +1,12 @@
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Contracts\bin\Debug\net8.0\Medhelp.Contracts.deps.json
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Contracts\bin\Debug\net8.0\Medhelp.Contracts.dll
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Contracts\bin\Debug\net8.0\Medhelp.Contracts.pdb
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Contracts\obj\Debug\net8.0\Medhelp.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Contracts\obj\Debug\net8.0\Medhelp.Contracts.AssemblyInfoInputs.cache
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Contracts\obj\Debug\net8.0\Medhelp.Contracts.AssemblyInfo.cs
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Contracts\obj\Debug\net8.0\Medhelp.Contracts.csproj.CoreCompileInputs.cache
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Contracts\obj\Debug\net8.0\Medhelp.Contracts.sourcelink.json
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Contracts\obj\Debug\net8.0\Medhelp.Contracts.dll
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Contracts\obj\Debug\net8.0\refint\Medhelp.Contracts.dll
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Contracts\obj\Debug\net8.0\Medhelp.Contracts.pdb
+d:\Файлики Сони\programming\Aeh-studies\Magisterska praca\Inzynierska\MedHelp\Medhelp\Medhelp.Contracts\obj\Debug\net8.0\ref\Medhelp.Contracts.dll

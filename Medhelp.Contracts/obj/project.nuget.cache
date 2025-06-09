@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "kGfGJPQtIy0=",
+  "success": true,
+  "projectFilePath": "D:\\Файлики Сони\\programming\\Aeh-studies\\Magisterska praca\\Inzynierska\\MedHelp\\Medhelp\\Medhelp.Contracts\\Medhelp.Contracts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jakor\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.15\\microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\jakor\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.15\\microsoft.windowsdesktop.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\jakor\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.15\\microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}
